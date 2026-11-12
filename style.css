@@ -119,13 +119,13 @@ html[lang=de] .hero h1{max-width:12ch;font-size:clamp(2.45rem,5.6vw,4.7rem)}
 .axis{display:flex;justify-content:space-between;margin-left:calc(9.5rem + 20px);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
 @media (max-width:599px){.lv{grid-template-columns:1fr;gap:8px}.axis{margin-left:0}}
 
-/* Phones */
-.phones{display:flex;gap:clamp(14px,3vw,32px);align-items:flex-start;max-width:640px}
+/* Phones: framed with the app's store renderer (transparent WebP, drawn at 2x), so the page only places them */
+.phones{display:flex;gap:clamp(8px,2vw,24px);align-items:flex-start;max-width:700px}
 .phones .phone{flex:1 1 0;min-width:0}
 .phones .phone+.phone{margin-top:clamp(36px,8vw,88px)}
-.phone{position:relative;margin:0;padding:3.6%;border-radius:15.5%/7%;background:#0D0C10;box-shadow:0 0 0 1.5px rgba(255,255,255,.14) inset,0 0 0 1px rgba(0,0,0,.4),0 34px 60px -30px rgba(23,21,26,.65)}
-.phone img{display:block;width:100%;border-radius:14%/6.4%}
-.phone::before{content:"";position:absolute;z-index:1;top:2.2%;left:50%;width:30%;height:3.3%;transform:translateX(-50%);background:#000;border-radius:99px}
+.phone{display:block}
+.phone img{display:block;width:100%;height:auto;filter:drop-shadow(0 26px 28px rgba(23,21,26,.26))}
+@media (prefers-color-scheme:dark){.phone img{filter:drop-shadow(0 26px 28px rgba(0,0,0,.5))}}
 
 /* iOS-style action list, with the app's real action titles */
 .actions{list-style:none;margin:28px 0 0;padding:0;max-width:340px;background:var(--surface);border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
