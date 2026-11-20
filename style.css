@@ -190,3 +190,18 @@ html[lang=de] .hero h1{max-width:12ch;font-size:clamp(2.45rem,5.6vw,4.7rem)}
 .faq dt{font:700 1.2rem/1.25 var(--display);letter-spacing:-.02em;margin-bottom:.4em}
 .faq dd{margin:0;color:var(--muted)}
 .faq em{font-style:normal;font-weight:600;color:var(--ink)}
+
+/* Store button and gift ideas in the hero (2026-11-20) */
+.get{display:flex;flex-wrap:wrap;align-items:center;gap:14px 16px;margin:0}
+.play{display:inline-block;line-height:0;border-radius:10px}
+.play img{height:56px;width:auto}
+.play:focus-visible{outline:3px solid var(--on-coral);outline-offset:3px}
+.gift-hero{margin-top:28px;max-width:38rem;background:rgba(255,255,255,.26);border-radius:22px;padding:18px 20px 20px}
+.gift-kick{margin:0 0 .3em;font-weight:800;font-size:1.15rem}
+.gift-text{margin:0 0 14px;line-height:1.42}
+.gift-cats{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.gift-cats li{background:rgba(255,255,255,.62);border-radius:999px;padding:.38em .8em;font-weight:650;font-size:.95rem;white-space:nowrap}
+.closing .get{margin:1.2em 0 .9em}
+.foot .tm{font-size:.8rem;color:var(--muted)}
+.hero-grid{grid-template-columns:minmax(0,1fr)}
+@media (min-width:920px){.hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
